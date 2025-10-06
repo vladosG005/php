@@ -16,8 +16,8 @@
    echo '<pre>';
    echo "Меня зовут {$name}", PHP_EOL;
    echo "Мне {$age} лет", PHP_EOL;
-   echo gettype($name), PHP_EOL;
-   echo gettype($age), PHP_EOL;
+   echo 'Тип переменной $name — ', gettype($name), PHP_EOL;
+   echo 'Тип переменной $age — ', gettype($age), PHP_EOL;
    unset($name, $age);
    echo '</pre>';
   ?> 
