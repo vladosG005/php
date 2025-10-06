@@ -13,11 +13,13 @@
  <body>
   <h1>Переменные и вывод</h1>
   <?php
-   echo "Меня зовут: {$name}" . PHP_EOL;
-   echo "Мне {$age} лет" . PHP_EOL;
-   echo gettype($name) . PHP_EOL;
-   echo gettype($age) . PHP_EOL;
+   echo '<pre>';
+   echo "Меня зовут: {$name}", PHP_EOL;
+   echo "Мне {$age} лет", PHP_EOL;
+   echo gettype($name), PHP_EOL;
+   echo gettype($age), PHP_EOL;
    unset($name, $age);
+   echo '</pre>';
   ?> 
  </body>
 </html>
