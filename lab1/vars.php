@@ -1,7 +1,3 @@
-<?php
- $name = 'Владислав';
- $age = 20;
-?>
 <!DOCTYPE html>
 <html lang="ru">
  <head>
@@ -13,6 +9,8 @@
  <body>
   <h1>Переменные и вывод</h1>
   <?php
+   $name = 'Владислав';
+   $age = 20;
    echo '<pre>';
    echo "Меня зовут {$name}", PHP_EOL;
    echo "Мне {$age} лет", PHP_EOL;
