@@ -7,13 +7,15 @@
   <title>Переменные и вывод</title>
  </head>
  <body>
+
   <h1>Переменные и вывод</h1>
+
   <?php
+   echo '<pre>';
 
    $name = 'Владислав';
    $age = 20;
-   echo '<pre>';
-
+   
    echo "Меня зовут {$name}", PHP_EOL;
    echo "Мне {$age} лет", PHP_EOL;
 
@@ -23,7 +25,7 @@
    unset($name, $age);
 
    echo '</pre>';
-   
-  ?> 
+  ?>
+
  </body>
 </html>
