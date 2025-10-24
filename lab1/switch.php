@@ -20,14 +20,14 @@
        case 3:
        case 4:
        case 5:
-           echo "Это рабочий день", PHP_EOL;
+           echo 'Это рабочий день', PHP_EOL;
            break;
        case 6:
        case 7:
-           echo "Это выходной день", PHP_EOL;
+           echo 'Это выходной день', PHP_EOL;
            break;
        default:
-           echo "Неизвестный день", PHP_EOL;
+           echo 'Неизвестный день', PHP_EOL;
    }
 
    echo '</pre>';
