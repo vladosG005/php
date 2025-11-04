@@ -6,8 +6,6 @@
   *
   * @param callable $a Функция.
   * @param array &$arr Массив.
-  *
-  * @return float|int Квадрат $a.
   */
  function map(callable $func, array &$arr): void {
      foreach($arr as &$i) {
