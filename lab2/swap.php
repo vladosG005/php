@@ -6,8 +6,6 @@
   *
   * @param mixed $x Первая переменная.
   * @param mixed $y Вторая переменная.
-  *
-  * @return void
   */
  $swap = function(mixed &$x, mixed &$y): void {
      $t = $x;
