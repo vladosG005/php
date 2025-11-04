@@ -28,7 +28,7 @@
                  ['link' => 'Калькулятор', 'href' => 'calc.php'],];
     
     echo '<ul class="menu">';
-    foreach($leftMenu as $navelement) {
+    foreach ($leftMenu as $navelement) {
         echo '<li><a href="', $navelement['href'], '">',
              $navelement['link'], '</a></li>';
     }
