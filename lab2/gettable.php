@@ -28,7 +28,7 @@
                  $i * $j, '</th>';
              }
              else {
-               echo '<td>', $i * $j, '</td>';
+                 echo '<td>', $i * $j, '</td>';
              }
          }
 
