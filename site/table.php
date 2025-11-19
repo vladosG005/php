@@ -1,6 +1,5 @@
 <?php
  declare(strict_types=1);
- include 'inc/lib.inc.php';
 
  $cols = 10;
  $rows = 10;

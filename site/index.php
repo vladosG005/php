@@ -53,29 +53,36 @@
   <header>
    <?php
     include 'inc/top.inc.php';
+    
+    echo $header;
    ?>
-   <?=$header?>
   </header>
-  <?php
-   include 'inc/menu.inc.php';
-
-   switch ($id) {
-	   case 'about': 
-		   include 'inc/about.php';
-		   break;
-	   case 'contact':
-		   include 'inc/contact.php';
-		   break;
-	   case 'table':
-		   include 'inc/table.php';
-		   break;
-	   case 'calc':
-		   include 'inc/calc.php';
-		   break;
-	   default:
-		   include 'inc/index.inc.php'; 
-   }
-  ?>
+  
+   <?php
+    include 'inc/menu.inc.php';
+   ?>
+   
+  <section>
+   <?php
+    switch ($id) {
+	    case 'about': 
+     	    include 'about.php';
+	  	    break;
+	    case 'contact':
+		    include 'contact.php';
+		    break;
+	    case 'table':
+		    include 'table.php';
+		    break;
+	    case 'calc':
+		    include 'calc.php';
+		    break;
+	    default:
+		    include 'inc/index.inc.php'; 
+    }
+   ?>
+  </section>
+  
   <footer>
    <?php
     include 'inc/bottom.inc.php';
