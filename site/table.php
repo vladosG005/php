@@ -21,7 +21,7 @@
  </head>
  <body>
 
-  <form action=<?=$_SERVER['REQUEST_URI']?> method="POST">
+  <form action=<?=$_SERVER['REQUEST_URI']?> method="post">
    <label>Количество колонок: </label>
    <br>
    <input name='cols' type='text' value=<?=$cols?>>
