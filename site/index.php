@@ -57,15 +57,13 @@
     echo $header;
    ?>
   </header>
-  
-   <?php
-    include 'inc/menu.inc.php';
-   ?>
    
   <section>
+   <h1>Добро пожаловать на наш сайт!</h1>
+
    <?php
     switch ($id) {
-	    case 'about': 
+	    case 'about':
      	    include 'about.php';
 	  	    break;
 	    case 'contact':
@@ -82,6 +80,12 @@
     }
    ?>
   </section>
+  
+  <nav>
+   <?php
+    include 'inc/menu.inc.php';
+   ?>
+  </nav>
   
   <footer>
    <?php
