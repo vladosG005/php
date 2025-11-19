@@ -59,8 +59,6 @@
   </header>
    
   <section>
-   <h1>Добро пожаловать на наш сайт!</h1>
-
    <?php
     switch ($id) {
 	    case 'about':
