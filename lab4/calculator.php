@@ -23,12 +23,7 @@
              $result = $num1 * $num2;
              break;
          case '/':
-             if ($num2 != 0) {
-                 $result = $num1 / $num2;
-             }
-             else {
-                 $result = 'На ноль делить нельзя!';
-             }
+             $result = $num2 != 0 ? $num1 / $num2 : 'На ноль делить нельзя!';
              break;
          }
      }
@@ -47,6 +42,9 @@
   <h1>Калькулятор</h1>
 
   <?php
+   if (is_numeric($result)) {
+       echo $num1, ' ', $operator, ' ', $num2, ' = ';
+   }
    echo $result;
   ?>
 

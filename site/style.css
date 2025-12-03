@@ -11,6 +11,10 @@ header {
  border-bottom: 1px dotted #b2bcc6;
  height: 6em;
 }
+header .welcome {
+ margin-top: 2.5em;
+ float: left;
+}
 header .slogan {
  font: 120% Georgia, "Times New Roman", Times, serif;
  color: #778899;

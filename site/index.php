@@ -54,7 +54,7 @@
    <?php
     include 'inc/top.inc.php';
     
-    echo $header;
+    echo '<span class="welcome">', $header, '</span>';
    ?>
   </header>
    

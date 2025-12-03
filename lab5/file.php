@@ -12,8 +12,8 @@
          $f = fopen(filename, 'a');
          fwrite($f, $guest);
          fclose($f);
-
-         header('Location: http://f1176550.xsph.ru/lab5/file.php');
+         
+         header("Location: http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}");
      }
  }
 ?>

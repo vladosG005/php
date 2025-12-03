@@ -3,4 +3,3 @@
 
  echo '<h2>Навигация по сайту</h2>';
  getMenu($schoolMenu, true);
-?>
