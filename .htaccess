@@ -1,0 +1,15 @@
+# Настройки сервера Apache
+Options +Indexes
+DirectoryIndex index.php
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteBase /
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+# Настройки PHP
+php_flag display_errors On
+php_flag display_startup_errors On
+php_value error_reporting 32767
+php_value error_log /home/f1176550/domains/f1176550.xsph.ru/php_errors.log

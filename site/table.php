@@ -11,18 +11,18 @@
  }
 ?>
 
-<form action=<?=$_SERVER['REQUEST_URI']?> method="post">
+<form action="<?=$_SERVER['REQUEST_URI']?>" method="post">
  <label>Количество колонок: </label>
  <br>
- <input name='cols' type='text' value=<?=$cols?>>
+ <input name="cols" type="text" value=<?=$cols?>>
  <br>
  <label>Количество строк: </label>
  <br>
- <input name='rows' type='text' value=<?=$rows?>>
+ <input name="rows" type="text" value=<?=$rows?>>
  <br>
  <label>Цвет: </label>
  <br>
- <input name='color' type='color' value=<?=$color?> list="listColors">
+ <input name="color" type="color" value=<?=$color?> list="listColors">
  <datalist id="listColors">
   <option>#ff0000</option>
   <option>#00ff00</option>
@@ -30,7 +30,7 @@
  </datalist>
  <br>
  <br>
- <input type='submit' value='Создать'>
+ <input type="submit" value="Создать">
 </form>
 
 <br>
