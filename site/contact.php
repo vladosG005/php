@@ -2,7 +2,8 @@
  declare(strict_types=1);
  
  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-     mail('vladosG005@yandex.ru', $_POST['subject'], $_POST['body'], 'From: admin@center.ogu');
+     mail('vladosG005@yandex.ru', htmlspecialchars(trim($_POST['subject'])),
+     htmlspecialchars(trim($_POST['body'])), 'From: admin@center.ogu');
  }
 ?>
 <h3>Адрес</h3>
