@@ -4,7 +4,7 @@
  session_start();
 
  // Подключаем код для сохранения информации о странице в сессии
- include('savepage.inc.php');
+ include 'savepage.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru">

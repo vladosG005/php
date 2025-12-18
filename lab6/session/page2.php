@@ -4,7 +4,7 @@
  session_start();
 
  // Подключаем код для сохранения информации о странице в сессии
- include('savepage.inc.php');
+ include 'savepage.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -17,10 +17,10 @@
   <h1>Страница 2</h1>
 
   <?php
-   include('menu.inc.php');
+   include 'menu.inc.php';
 
    // Подключаем код для вывода информации обо всех посещённых страницах
-   include('visited.inc.php');
+   include 'visited.inc.php';
   ?>
 
  </body>

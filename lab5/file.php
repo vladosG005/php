@@ -1,7 +1,7 @@
 <?php
  declare(strict_types=1);
 
- define('filename', 'db/guestbook.txt');
+ const filename = 'db/guestbook.txt';
  
  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
      $name = trim(strip_tags(htmlspecialchars($_POST['fname'])));
