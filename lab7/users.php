@@ -1,8 +1,15 @@
 <?php
  declare(strict_types=1);
 
- require_once 'src/Classes/User.php';
- require_once 'src/Classes/SuperUser.php';
+ function userLoad(): void {
+     require 'src/Classes/User.php';
+     require 'src/Classes/SuperUser.php';
+ }
+
+ spl_autoload_register('userLoad');
+
+ use App\Classes\User;
+ use App\Classes\SuperUser;
  
  $user1 = new User('Павел', 'koren12', 'DZL8pr');
  $user1->showInfo();

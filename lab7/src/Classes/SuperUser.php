@@ -1,7 +1,7 @@
 <?php
  declare(strict_types=1);
 
- require_once 'User.php';
+ namespace App\Classes;
 
 //PHPDoc
  class SuperUser extends User {
