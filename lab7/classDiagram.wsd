@@ -1,0 +1,5 @@
+@startuml classDiagram
+participant User
+participant SuperUser
+SuperUser -> User: Наследуется от
+@enduml
