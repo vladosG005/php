@@ -4,4 +4,4 @@
 # SuperUser
 Класс, в котором хранятся имя, логин и роль суперпользователя.
 
-![](out/lab7/classDiagram.png)
+![](classDiagram.png)
