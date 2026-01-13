@@ -2,8 +2,9 @@
  declare(strict_types=1);
 
  namespace App\Classes;
+ require_once 'User.php';
 
-//PHPDoc
+ //PHPDoc
  class SuperUser extends User {
      public function __construct(string $name, string $login, string $password,
      public string $role) {

@@ -2,8 +2,8 @@
  declare(strict_types=1);
 
  function userLoad(): void {
-     require 'src/Classes/User.php';
-     require 'src/Classes/SuperUser.php';
+     require_once 'src/Classes/User.php';
+     require_once 'src/Classes/SuperUser.php';
  }
 
  spl_autoload_register('userLoad');

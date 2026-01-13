@@ -2,6 +2,7 @@
  declare(strict_types=1);
 
  namespace App\Classes;
+
  //PHPDoc
  class User {
      public function __construct(public string $name, public string $login,
