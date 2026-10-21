@@ -1,5 +1,23 @@
-@startuml classDiagram
-participant User
-participant SuperUser
-SuperUser -> User: Наследуется от
+@startuml
+skinparam class {
+    BackgroundColor White
+    BorderColor #333
+    ArrowColor #333
+}
+
+class User {
+  + name: string
+  + login: string
+  - password: string
+  + __construct(name, login, password)
+  + showInfo(): void
+  + __destruct()
+}
+
+class SuperUser {
+  + role: string
+  + showInfo(): void [override]
+}
+
+User <|-- SuperUser
 @enduml
