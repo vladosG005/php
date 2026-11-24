@@ -19,6 +19,7 @@
 
      header("Location: http://{$_SERVER['HTTP_HOST']}" .
             "{$_SERVER['REQUEST_URI']}");
+     exit;
  }
 
  if (isset($_GET['id'])) {
@@ -27,6 +28,7 @@
      $con->query("DELETE FROM msgs WHERE id={$id}");
      header("Location: http://{$_SERVER['HTTP_HOST']}" .
             "{$_SERVER['PHP_SELF']}");
+     exit;
  }
 ?>
 <!DOCTYPE html>
